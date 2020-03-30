@@ -1,1 +1,4 @@
 # parking-simulator
+
+The application requires one user, which gives commands, and one robot, which interprets them. The user should transmit the action he/she wants to be done by the robot, using one of some preset abbreviations : PFR, PFL, EPFR, EPFL, PBR, PBL, EPBR, EPBL. Once the command is received, the robot will perform one parking /exit parking, or, in case the command is not compatible with the abbreviations, no action will be done. In addition to that, the neopixel ring will also be controlled by the user, because its lightning effects also depend on the parking type, if any.
+The communication protocol used is Bluetooth. Using a module,the Arduino board was connected to a smartphone, using ”Serial Bluetooth Terminal” application. The two devices are paired using a PIN code, and the information transmitted through the smartphone is received as strings and then further used to move the robot (park the car).
